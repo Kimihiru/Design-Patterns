@@ -1,16 +1,8 @@
-## Abstract Factory
+## 装饰器
+## 意图：
+动态的给一个对象添加一些额外的职责
+### 适用于
 
-Abstract factory pattern has creational purpose and provides an interface for 
-creating families of related or dependent objects without specifying their 
-concrete classes. Pattern applies to object and deal with object relationships, 
-which are more dynamic. In contrast to Factory Method, Abstract Factory pattern
-produces family of types that are related, ie. it has more than one method of 
-types it produces.
-
-
-### When to use
-
-* a system should be independent of how its products are created, composed, and represented
-* a system should be configured with one of multiple families of products
-* a family of related product objects is designed to be used together
-* you want to provide a class library of products, and you want to reveal just their interfaces, not their implementations
+* 在不影响其他对象的情况下，以动态，透明的方式给单个对象添加职责。
+* 处理那些可以撤销的职责。
+* 当不能采用生成子类的方式进行扩充时。
