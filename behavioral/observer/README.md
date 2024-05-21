@@ -1,16 +1,10 @@
-## Abstract Factory
-
-Abstract factory pattern has creational purpose and provides an interface for 
-creating families of related or dependent objects without specifying their 
-concrete classes. Pattern applies to object and deal with object relationships, 
-which are more dynamic. In contrast to Factory Method, Abstract Factory pattern
-produces family of types that are related, ie. it has more than one method of 
-types it produces.
+## 观察者
+## 意图
+定义对象间的一种一对多的依赖关系，当一个对象的状态发生改变时，所有依赖于它的对象都得到通知并被自动更新。
 
 
-### When to use
+### 适用于
 
-* a system should be independent of how its products are created, composed, and represented
-* a system should be configured with one of multiple families of products
-* a family of related product objects is designed to be used together
-* you want to provide a class library of products, and you want to reveal just their interfaces, not their implementations
+* 当一个抽象模型有两个方面，其中一个方面依赖于另一个方面，将这两者封装在独立的对象中以使它们各自独立地改变和复用。
+* 当对一个对象的改变需要同时改变其他对象，而不知道具体有多少对象有待改变时。
+* 当一个对象必须通知其他对象，而它又不能假定其他对象是谁，即不希望这些对象是紧耦合的。
