@@ -1,16 +1,8 @@
-## Abstract Factory
-
-Abstract factory pattern has creational purpose and provides an interface for 
-creating families of related or dependent objects without specifying their 
-concrete classes. Pattern applies to object and deal with object relationships, 
-which are more dynamic. In contrast to Factory Method, Abstract Factory pattern
-produces family of types that are related, ie. it has more than one method of 
-types it produces.
+## 解释器
+## 意图：
+给定一个语言，定义它的文法的一种表示，并定义一个解释器，用来表示解释语言中的句子。
 
 
-### When to use
+### 适用于
 
-* a system should be independent of how its products are created, composed, and represented
-* a system should be configured with one of multiple families of products
-* a family of related product objects is designed to be used together
-* you want to provide a class library of products, and you want to reveal just their interfaces, not their implementations
+* 当有一个语言需要解释执行，并且可将语言中的句子表示为一个抽象的语法树时。
